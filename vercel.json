@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    { "source": "/beranda", "destination": "/index.html" },
+    { "source": "/tentang", "destination": "/about.html" },
+    { "source": "/destinasi", "destination": "/destinations.html" },
+    { "source": "/detail-destinasi", "destination": "/destination-details.html" },
+    { "source": "/paket-wisata", "destination": "/tours.html" },
+    { "source": "/detail-paket", "destination": "/tour-details.html" },
+    { "source": "/galeri", "destination": "/gallery.html" },
+    { "source": "/artikel", "destination": "/blog.html" },
+    { "source": "/detail-artikel", "destination": "/blog-details.html" },
+    { "source": "/kontak", "destination": "/contact.html" }
+  ],
+  "cleanUrls": true
+}
