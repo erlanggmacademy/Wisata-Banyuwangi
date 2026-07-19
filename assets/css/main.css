@@ -8520,3 +8520,52 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Accessibility Fixes
+--------------------------------------------------------------*/
+
+/* Memastikan tombol subscribe dengan ikon memiliki label untuk screen reader */
+.subscribe-btn {
+  position: relative;
+}
+
+/* Fallback jika aria-label tidak terbaca */
+.subscribe-btn i {
+  pointer-events: none;
+}
+
+/* Tooltip visual untuk membantu user (opsional) */
+.subscribe-btn:hover::after {
+  content: "Berlangganan";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--default-color);
+  color: var(--contrast-color);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Memastikan link sosial media memiliki aria-label sudah di HTML */
+.social-links a {
+  position: relative;
+}
+
+.social-links a:hover::after {
+  content: attr(aria-label);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--default-color);
+  color: var(--contrast-color);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+}

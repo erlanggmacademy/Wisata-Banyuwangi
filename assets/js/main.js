@@ -177,4 +177,69 @@
     });
   });
 
+  // ============================================
+  // ACCESSIBILITY ENHANCEMENTS
+  // ============================================
+
+  /**
+   * 1. Pastikan semua tombol dengan ikon memiliki aria-label
+   * (fallback jika terlewat di HTML)
+   */
+  document.querySelectorAll('.subscribe-btn:not([aria-label])').forEach(function(btn) {
+    const hasIcon = btn.querySelector('i');
+    const hasText = btn.textContent.trim().length > 0;
+    
+    if (hasIcon && !hasText) {
+      btn.setAttribute('aria-label', 'Berlangganan newsletter');
+    }
+  });
+
+  /**
+   * 2. Pastikan semua link sosial media memiliki aria-label
+   * (fallback jika terlewat di HTML)
+   */
+  document.querySelectorAll('.social-links a:not([aria-label])').forEach(function(link) {
+    const icon = link.querySelector('i');
+    if (icon) {
+      const iconClass = icon.className;
+      let label = 'Social media';
+      
+      // Deteksi platform dari kelas ikon
+      if (iconClass.includes('twitter')) label = 'Twitter';
+      else if (iconClass.includes('facebook')) label = 'Facebook';
+      else if (iconClass.includes('instagram')) label = 'Instagram';
+      else if (iconClass.includes('linkedin')) label = 'LinkedIn';
+      else if (iconClass.includes('youtube')) label = 'YouTube';
+      else if (iconClass.includes('whatsapp')) label = 'WhatsApp';
+      else if (iconClass.includes('tiktok')) label = 'TikTok';
+      else if (iconClass.includes('telegram')) label = 'Telegram';
+      else if (iconClass.includes('pinterest')) label = 'Pinterest';
+      else if (iconClass.includes('github')) label = 'GitHub';
+      
+      link.setAttribute('aria-label', label);
+    }
+  });
+
+  /**
+   * 3. Tambahkan keyboard support untuk tombol subscribe
+   * (Enter/Spasi sudah otomatis support untuk <button>)
+   */
+  document.querySelectorAll('.subscribe-btn').forEach(function(btn) {
+    // Pastikan type="submit" sudah benar
+    if (!btn.hasAttribute('type')) {
+      btn.setAttribute('type', 'submit');
+    }
+  });
+
+  /**
+   * 4. Pastikan semua link dengan target="_blank" memiliki rel="noopener noreferrer"
+   * (untuk keamanan)
+   */
+  document.querySelectorAll('a[target="_blank"]:not([rel*="noopener"])').forEach(function(link) {
+    const rel = link.getAttribute('rel') || '';
+    if (!rel.includes('noopener')) {
+      link.setAttribute('rel', rel + ' noopener noreferrer');
+    }
+  });
+
 })();
