@@ -3030,13 +3030,13 @@ section,
 }
 
 .travel-destinations .planning-assistance {
-  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), black 20%));
   border-radius: 20px;
   padding: 50px 40px;
   position: relative;
   overflow: hidden;
+  color: var(--contrast-color);
 }
-
 @media (max-width: 768px) {
   .travel-destinations .planning-assistance {
     padding: 40px 25px;
@@ -3060,11 +3060,20 @@ section,
 }
 
 .travel-destinations .planning-assistance .assistance-content h3 {
-  color: var(--heading-color);
+  color: var(--contrast-color);
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 16px;
-  font-family: var(--heading-font);
+}
+
+.travel-destinations .planning-assistance .assistance-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {
@@ -3074,7 +3083,7 @@ section,
 }
 
 .travel-destinations .planning-assistance .assistance-content p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 17px;
   line-height: 1.6;
   margin-bottom: 32px;
@@ -3107,9 +3116,9 @@ section,
 }
 
 .travel-destinations .planning-assistance .assistance-content .assistance-actions .btn.btn-primary {
-  background-color: var(--accent-color);
-  border: 2px solid var(--accent-color);
-  color: var(--contrast-color);
+  background-color: var(--contrast-color);
+  border: 2px solid var(--contrast-color);
+  color: var(--accent-color);
 }
 
 .travel-destinations .planning-assistance .assistance-content .assistance-actions .btn.btn-primary:hover {
@@ -3121,14 +3130,13 @@ section,
 
 .travel-destinations .planning-assistance .assistance-content .assistance-actions .btn.btn-outline {
   background-color: transparent;
-  border: 2px solid var(--accent-color);
-  color: var(--accent-color);
+  border: 2px solid var(--contrast-color);
+  color: var(--contrast-color);
 }
 
 .travel-destinations .planning-assistance .assistance-content .assistance-actions .btn.btn-outline:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  transform: translateY(-2px);
+  background-color: var(--contrast-color);
+  color: var(--accent-color);
 }
 
 /*--------------------------------------------------------------
@@ -3846,7 +3854,8 @@ section,
   background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #000 20%));
   border-radius: 15px;
   overflow: hidden;
-  min-height: 200px;
+  min-height: 220px;
+  height: 100%;
   position: relative;
 }
 
@@ -3909,9 +3918,9 @@ section,
 }
 
 .travel-tours .special-offers .offer-banner .offer-image {
-  flex: 0 0 200px;
+  flex: 0 0 180px;
+  min-height: 220px;
 }
-
 @media (max-width: 768px) {
   .travel-tours .special-offers .offer-banner .offer-image {
     flex: none;
@@ -4013,25 +4022,57 @@ section,
 }
 
 .travel-tours .cta-section {
-  background-color: var(--surface-color);
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), black 20%));
   padding: 3rem 2rem;
-  border-radius: 15px;
+  border-radius: 20px;
   margin-top: 2rem;
+  color: var(--contrast-color);
 }
 
 .travel-tours .cta-section h3 {
-  color: var(--heading-color);
+  color: var(--contrast-color);
   margin-bottom: 1rem;
   font-size: 2rem;
 }
 
 .travel-tours .cta-section p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
   font-size: 1.125rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.travel-tours .cta-section .cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.travel-tours .cta-section .btn-primary {
+  background: var(--contrast-color);
+  color: var(--accent-color);
+  border: 2px solid var(--contrast-color);
+}
+
+.travel-tours .cta-section .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.travel-tours .cta-section .btn-outline-primary {
+  background: transparent;
+  color: var(--contrast-color);
+  border: 2px solid var(--contrast-color);
+}
+
+.travel-tours .cta-section .btn-outline-primary:hover {
+  background: var(--contrast-color);
+  color: var(--accent-color);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 576px) {
