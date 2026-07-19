@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Wisata Banyuwangi - The Sunrise of Java</title>
+  <meta name="description" content="Jelajahi keindahan Banyuwangi, dari Kawah Ijen, Pantai Pulau Merah, hingga Taman Nasional Baluran. Paket wisata terbaik dan terpercaya.">
+  <meta name="keywords" content="wisata banyuwangi, kawah ijen, pantai pulau merah, baluran, open trip banyuwangi, tour banyuwangi">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Lare Osing</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="destinations.html">Destinasi</a></li>
+          <li><a href="tours.html">Paket Wisata</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="booking.html">Pesan Sekarang</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="travel-hero" class="travel-hero section dark-background">
+
+      <div class="hero-background">
+        <video autoplay="" muted="" loop="">
+          <source src="assets/img/travel/video-2.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="hero-text" data-aos="fade-up" data-aos-delay="100">
+              <h1 class="hero-title">Jelajahi Pesona Banyuwangi<br><span style="font-size: 0.7em;">The Sunrise of Java</span></h1>
+              <p class="hero-subtitle">Dari birunya api Kawah Ijen hingga eksotisnya Pantai Pulau Merah. Temukan surga tersembunyi di ujung timur Pulau Jawa bersama kami. Pengalaman tak terlupakan menanti Anda!</p>
+              <div class="hero-buttons">
+                <a href="destinations.html" class="btn btn-primary me-3">Mulai Jelajah</a>
+                <a href="tours.html" class="btn btn-outline">Lihat Paket Wisata</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="booking-form-wrapper" data-aos="fade-left" data-aos-delay="200">
+              <div class="booking-form">
+                <h3 class="form-title">Rencanakan Petualanganmu</h3>
+                <form action="" class="">
+                  <div class="form-group mb-3">
+                    <label for="destination">Pilih Destinasi</label>
+                    <select name="destination" id="destination" class="form-select" required="">
+                      <option value="">Pilih destinasi favorit</option>
+                      <option value="ijen">Kawah Ijen</option>
+                      <option value="baluran">Taman Nasional Baluran</option>
+                      <option value="pulau-merah">Pantai Pulau Merah</option>
+                      <option value="sukamade">Pantai Sukamade</option>
+                      <option value="teluk-hijau">Teluk Hijau</option>
+                      <option value="jagir">Air Terjun Jagir</option>
+                    </select>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label for="checkin">Tanggal Berangkat</label>
+                        <input type="date" name="checkin" id="checkin" class="form-control" required="">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label for="checkout">Tanggal Pulang</label>
+                        <input type="date" name="checkout" id="checkout" class="form-control" required="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label for="adults">Dewasa</label>
+                        <select name="adults" id="adults" class="form-select" required="">
+                          <option value="1">1 Orang</option>
+                          <option value="2">2 Orang</option>
+                          <option value="3">3 Orang</option>
+                          <option value="4">4+ Orang</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label for="children">Anak-anak</label>
+                        <select name="children" id="children" class="form-select">
+                          <option value="0">Tidak ada</option>
+                          <option value="1">1 Anak</option>
+                          <option value="2">2 Anak</option>
+                          <option value="3">3+ Anak</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="tour-type">Jenis Wisata</label>
+                    <select name="tour_type" id="tour-type" class="form-select" required="">
+                      <option value="">Pilih jenis wisata</option>
+                      <option value="adventure">Petualangan</option>
+                      <option value="cultural">Budaya</option>
+                      <option value="family">Wisata Keluarga</option>
+                      <option value="honeymoon">Bulan Madu</option>
+                      <option value="backpacker">Backpacker</option>
+                    </select>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary w-100">Cari Paket Terbaik</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h3>Kenapa Harus Wisata ke Banyuwangi?</h3>
+              <p>Banyuwangi adalah permata tersembunyi di ujung timur Pulau Jawa. Dijuluki <strong>"The Sunrise of Java"</strong>, kabupaten ini menawarkan panorama alam yang luar biasa lengkap — dari gunung, pantai, hutan, hingga savana ala Afrika.</p>
+              <p>Nikmati sensasi mendaki Kawah Ijen dengan fenomena <em>blue fire</em>-nya yang legendaris, berselancar di Pantai Pulau Merah, atau menyaksikan matahari terbit pertama di Pulau Jawa. Semua bisa Anda dapatkan dalam satu kabupaten!</p>
+              <div class="stats-row">
+                <div class="stat-item">
+                  <span data-purecounter-start="0" data-purecounter-end="2500" data-purecounter-duration="2" class="purecounter">0</span>
+                  <div class="stat-label">Wisatawan Puas</div>
+                </div>
+                <div class="stat-item">
+                  <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="2" class="purecounter">0</span>
+                  <div class="stat-label">Destinasi</div>
+                </div>
+                <div class="stat-item">
+                  <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2" class="purecounter">0</span>
+                  <div class="stat-label">Tahun Melayani</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-image">
+              <img src="assets/img/travel/showcase-8.webp" alt="Kawah Ijen Banyuwangi" class="img-fluid rounded-4">
+              <div class="experience-badge">
+                <div class="experience-number">10+</div>
+                <div class="experience-text">Tahun Pengalaman</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-choose-section">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+              <h3>Mengapa Memilih Kami untuk Petualangan Anda?</h3>
+              <p>Kami adalah mitra perjalanan terpercaya yang siap mewujudkan liburan impian Anda di Banyuwangi.</p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <h4>Pemandu Lokal Berpengalaman</h4>
+                <p>Tim kami adalah warga asli Banyuwangi yang hafal setiap sudut destinasi, spot foto terbaik, dan cerita budaya setempat.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h4>Keamanan & Kenyamanan</h4>
+                <p>Peralatan lengkap, transportasi prima, dan asuransi perjalanan — keamanan Anda adalah prioritas utama kami.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-cash"></i>
+                </div>
+                <h4>Harga Ramah di Kantong</h4>
+                <p>Paket wisata lengkap dengan harga kompetitif. Banyak pilihan mulai dari open trip hemat hingga private tour eksklusif.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-headset"></i>
+                </div>
+                <h4>Layanan 24/7</h4>
+                <p>Konsultasi kapan saja via WhatsApp. Tim support kami siap membantu dari perencanaan sampai perjalanan selesai.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <h4>Rute Wisata Terlengkap</h4>
+                <p>Dari Kawah Ijen, Baluran, Pulau Merah, hingga hidden gems seperti Teluk Hijau dan Air Terjun Jagir — semua kami jangkau.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="450">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h4>Rating Terbaik</h4>
+                <p>Ratusan testimoni bintang 5 dari wisatawan membuktikan kualitas layanan kami. Kepuasan Anda adalah kebanggaan kami.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Featured Destinations Section -->
+    <section id="featured-destinations" class="featured-destinations section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Destinasi Unggulan</h2>
+        <div><span>Jelajahi</span> <span class="description-title">Destinasi Terbaik Banyuwangi</span></div>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="featured-destination">
+              <div class="destination-overlay">
+                <img src="assets/img/travel/destination-3.webp" alt="Kawah Ijen" class="img-fluid">
+                <div class="destination-info">
+                  <span class="destination-tag">⭐ Ikon Banyuwangi</span>
+                  <h3>Kawah Ijen</h3>
+                  <p class="location"><i class="bi bi-geo-alt-fill"></i> Banyuwangi, Jawa Timur</p>
+                  <p class="description">Saksikan fenomena langka <strong>Blue Fire</strong> terbesar di dunia! Danau kawah asam berwarna toska menjadi latar matahari terbit paling memukau se-Indonesia.</p>
+                  <div class="destination-meta">
+                    <div class="tours-count">
+                      <i class="bi bi-collection"></i>
+                      <span>10+ Paket Wisata</span>
+                    </div>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <span>4.9 (520)</span>
+                    </div>
+                  </div>
+                  <div class="price-info">
+                    <span class="starting-from">Mulai dari</span>
+                    <span class="amount">Rp 350K</span>
+                  </div>
+                  <a href="destination-details.html" class="explore-btn">
+                    <span>Jelajahi Sekarang</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-3">
+
+              <div class="col-12" data-aos="fade-left" data-aos-delay="300">
+                <div class="compact-destination">
+                  <div class="destination-image">
+                    <img src="assets/img/travel/destination-7.webp" alt="Taman Nasional Baluran" class="img-fluid">
+                    <div class="badge-offer">Little Africa van Java</div>
+                  </div>
+                  <div class="destination-details">
+                    <h4>Taman Nasional Baluran</h4>
+                    <p class="location"><i class="bi bi-geo-alt"></i> Banyuwangi, Jawa Timur</p>
+                    <p class="brief">Nikmati sensasi safari di savana ala Afrika! Padang rumput luas dengan latar Gunung Baluran, tempat merak, banteng, dan rusa berkeliaran bebas.</p>
+                    <div class="stats-row">
+                      <span class="tour-count"><i class="bi bi-calendar-check"></i> 8 Paket Wisata</span>
+                      <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
+                      <span class="price">Mulai Rp 275K</span>
+                    </div>
+                    <a href="destination-details.html" class="quick-link">Lihat Detail <i class="bi bi-chevron-right"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12" data-aos="fade-left" data-aos-delay="400">
+                <div class="compact-destination">
+                  <div class="destination-image">
+                    <img src="assets/img/travel/destination-11.webp" alt="Pantai Pulau Merah" class="img-fluid">
+                  </div>
+                  <div class="destination-details">
+                    <h4>Pantai Pulau Merah</h4>
+                    <p class="location"><i class="bi bi-geo-alt"></i> Pesanggaran, Banyuwangi</p>
+                    <p class="brief">Pantai eksotis dengan bukit hijau menjorok ke laut. Spot surfing terbaik di Banyuwangi, sunset memukau, dan pasir putih lembut sejauh mata memandang.</p>
+                    <div class="stats-row">
+                      <span class="tour-count"><i class="bi bi-calendar-check"></i> 6 Paket</span>
+                      <span class="rating"><i class="bi bi-star-fill"></i> 4.7</span>
+                      <span class="price">Mulai Rp 200K</span>
+                    </div>
+                    <a href="destination-details.html" class="quick-link">Lihat Detail <i class="bi bi-chevron-right"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12" data-aos="fade-left" data-aos-delay="500">
+                <div class="compact-destination">
+                  <div class="destination-image">
+                    <img src="assets/img/travel/destination-16.webp" alt="Teluk Hijau" class="img-fluid">
+                    <div class="badge-offer limited">Hidden Gem!</div>
+                  </div>
+                  <div class="destination-details">
+                    <h4>Teluk Hijau</h4>
+                    <p class="location"><i class="bi bi-geo-alt"></i> Taman Nasional Meru Betiri</p>
+                    <p class="brief">Pantai tersembunyi dengan air laut hijau jernih bak kolam renang raksasa. Trekking ringan menuju surga privat yang masih alami.</p>
+                    <div class="stats-row">
+                      <span class="tour-count"><i class="bi bi-calendar-check"></i> 5 Paket</span>
+                      <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                      <span class="price">Mulai Rp 325K</span>
+                    </div>
+                    <a href="destination-details.html" class="quick-link">Lihat Detail <i class="bi bi-chevron-right"></i></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Destinations Section -->
+
+    <!-- Featured Tours Section -->
+    <section id="featured-tours" class="featured-tours section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Paket Wisata Favorit</h2>
+        <div><span>Pilihan</span> <span class="description-title">Paket Wisata Terpopuler</span></div>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="tour-card">
+              <div class="tour-image">
+                <img src="assets/img/travel/tour-1.webp" alt="Ijen Blue Fire" class="img-fluid" loading="lazy">
+                <div class="tour-badge">Best Seller</div>
+                <div class="tour-price">Rp 350K</div>
+              </div>
+              <div class="tour-content">
+                <h4>Ijen Blue Fire Tour</h4>
+                <div class="tour-meta">
+                  <span class="duration"><i class="bi bi-clock"></i> 1 Hari 1 Malam</span>
+                  <span class="group-size"><i class="bi bi-people"></i> Min 2 Orang</span>
+                </div>
+                <p>Berangkat dini hari, trekking ke Kawah Ijen, saksikan Blue Fire legendaris, dan nikmati sunrise spektakuler dari puncak. Termasuk masker gas dan pemandu.</p>
+                <div class="tour-highlights">
+                  <span>Blue Fire</span>
+                  <span>Sunrise Ijen</span>
+                  <span>Danau Kawah</span>
+                </div>
+                <div class="tour-action">
+                  <a href="booking.html" class="btn-book">Pesan Sekarang</a>
+                  <div class="tour-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>4.8 (210)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="tour-card">
+              <div class="tour-image">
+                <img src="assets/img/travel/tour-2.webp" alt="Baluran Safari" class="img-fluid" loading="lazy">
+                <div class="tour-badge limited">Promo!</div>
+                <div class="tour-price">Rp 275K</div>
+              </div>
+              <div class="tour-content">
+                <h4>Baluran Savana Safari</h4>
+                <div class="tour-meta">
+                  <span class="duration"><i class="bi bi-clock"></i> 1 Hari</span>
+                  <span class="group-size"><i class="bi bi-people"></i> Min 4 Orang</span>
+                </div>
+                <p>Eksplorasi "Little Africa van Java" — savana luas, Pantai Bama, dan Menara Pantau. Kesempatan melihat banteng, rusa, dan merak di habitat aslinya.</p>
+                <div class="tour-highlights">
+                  <span>Savana Bekol</span>
+                  <span>Pantai Bama</span>
+                  <span>Spot Foto Keren</span>
+                </div>
+                <div class="tour-action">
+                  <a href="booking.html" class="btn-book">Pesan Sekarang</a>
+                  <div class="tour-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <span>4.6 (145)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="tour-card">
+              <div class="tour-image">
+                <img src="assets/img/travel/tour-4.webp" alt="Paket 3 Hari Banyuwangi" class="img-fluid" loading="lazy">
+                <div class="tour-badge new">Paket Lengkap</div>
+                <div class="tour-price">Rp 850K</div>
+              </div>
+              <div class="tour-content">
+                <h4>Paket Eksplorasi 3 Hari</h4>
+                <div class="tour-meta">
+                  <span class="duration"><i class="bi bi-clock"></i> 3 Hari 2 Malam</span>
+                  <span class="group-size"><i class="bi bi-people"></i> Min 2 Orang</span>
+                </div>
+                <p>Komplit! Kawah Ijen + Baluran + Pulau Merah dalam satu paket. Cocok untuk yang ingin puas menjelajahi Banyuwangi dari gunung sampai pantai.</p>
+                <div class="tour-highlights">
+                  <span>Kawah Ijen</span>
+                  <span>Baluran</span>
+                  <span>Pulau Merah</span>
+                </div>
+                <div class="tour-action">
+                  <a href="booking.html" class="btn-book">Pesan Sekarang</a>
+                  <div class="tour-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span>4.9 (178)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="tour-card">
+              <div class="tour-image">
+                <img src="assets/img/travel/tour-5.webp" alt="Pulau Merah Surf" class="img-fluid" loading="lazy">
+                <div class="tour-badge">Surf & Chill</div>
+                <div class="tour-price">Rp 200K</div>
+              </div>
+              <div class="tour-content">
+                <h4>Pulau Merah Surf & Sunset</h4>
+                <div class="tour-meta">
+                  <span class="duration"><i class="bi bi-clock"></i> 1 Hari</span>
+                  <span class="group-size"><i class="bi bi-people"></i> Min 2 Orang</span>
+                </div>
+                <p>Seharian di Pantai Pulau Merah. Opsional belajar surfing dengan instruktur, atau santai menikmati sunset dari bukit sambil berfoto ria.</p>
+                <div class="tour-highlights">
+                  <span>Surfing</span>
+                  <span>Sunset Spot</span>
+                  <span>Piknik Pantai</span>
+                </div>
+                <div class="tour-action">
+                  <a href="booking.html" class="btn-book">Pesan Sekarang</a>
+                  <div class="tour-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>4.7 (89)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="tour-card">
+              <div class="tour-image">
+                <img src="assets/img/travel/tour-6.webp" alt="Sukamade Turtle" class="img-fluid" loading="lazy">
+                <div class="tour-badge cultural">Edukasi</div>
+                <div class="tour-price">Rp 450K</div>
+              </div>
+              <div class="tour-content">
+                <h4>Sukamade Turtle Adventure</h4>
+                <div class="tour-meta">
+                  <span class="duration"><i class="bi bi-clock"></i> 2 Hari 1 Malam</span>
+                  <span class="group-size"><i class="bi bi-people"></i> Min 2 Orang</span>
+                </div>
+                <p>Menyaksikan penyu bertelur di malam hari dan melepas tukik ke laut! Pengalaman konservasi langka di pantai terpencil Taman Nasional Meru Betiri.</p>
+                <div class="tour-highlights">
+                  <span>Penyu Bertelur</span>
+                  <span>Lepas Tukik</span>
+                  <span>Pantai Privat</span>
+                </div>
+                <div class="tour-action">
+                  <a href="booking.html" class="btn-book">Pesan Sekarang</a>
+                  <div class="tour-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <span>4.5 (62)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="tour-card">
+              <div class="tour-image">
+                <img src="assets/img/travel/tour-8.webp" alt="Air Terjun Jagir" class="img-fluid" loading="lazy">
+                <div class="tour-badge adventure">Petualangan</div>
+                <div class="tour-price">Rp 250K</div>
+              </div>
+              <div class="tour-content">
+                <h4>Jagir Waterfall Trek</h4>
+                <div class="tour-meta">
+                  <span class="duration"><i class="bi bi-clock"></i> 1 Hari</span>
+                  <span class="group-size"><i class="bi bi-people"></i> Min 3 Orang</span>
+                </div>
+                <p>Trekking ke air terjun bertingkat tersembunyi di kawasan hutan lindung. Air jernih kebiruan, kolam alami untuk berenang, dan udara pegunungan yang segar.</p>
+                <div class="tour-highlights">
+                  <span>Trekking Asik</span>
+                  <span>Kolam Alami</span>
+                  <span>Spot Instagramable</span>
+                </div>
+                <div class="tour-action">
+                  <a href="booking.html" class="btn-book">Pesan Sekarang</a>
+                  <div class="tour-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span>4.9 (40)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+          <a href="tours.html" class="btn-view-all">Lihat Semua Paket Wisata</a>
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Tours Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials-home" class="testimonials-home section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimoni</h2>
+        <div><span>Apa Kata</span> <span class="description-title">Wisatawan Kami</span></div>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Pengalaman pertama ke Kawah Ijen bareng tim ini luar biasa! Pemandu sangat berpengalaman, peralatan lengkap, dan Blue Fire-nya benar-benar magis. Pasti balik lagi!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/person/person-m-9.webp" class="testimonial-img" alt="">
+                <h3>Andi Pratama</h3>
+                <h4>Traveler Jakarta</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Paket 3 hari super lengkap! Dari Ijen, Baluran savana keren banget, sampai sunset di Pulau Merah. Semua terorganisir rapi. Recommended banget buat yang baru pertama ke Banyuwangi!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
+                <h3>Rina Wijaya</h3>
+                <h4>Content Creator Surabaya</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Bawa keluarga ke Baluran, anak-anak happy banget lihat rusa dan banteng di alam liar. Pemandu sabar, mobil nyaman, dan banyak spot foto keren. Puas!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/person/person-f-12.webp" class="testimonial-img" alt="">
+                <h3>Maya Susanti</h3>
+                <h4>Ibu Rumah Tangga Malang</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Teluk Hijau hidden paradise! Airnya jernih banget kayak di Maldives versi Banyuwangi. Terima kasih udah direkomendasiin destinasi anti-mainstream ini.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/person/person-m-12.webp" class="testimonial-img" alt="">
+                <h3>Budi Hartono</h3>
+                <h4>Backpacker Bandung</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Bulan madu kami diaturin sama tim ini, private tour ke Pulau Merah dan Ijen. Romantis banget! Pelayanan bintang lima, harga tetap bersahabat. Gak nyesel!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/person/person-m-13.webp" class="testimonial-img" alt="">
+                <h3>David & Sari</h3>
+                <h4>Pasangan Bulan Madu Bali</h4>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
+          <div class="content-wrapper">
+            <div class="badge-wrapper">
+              <span class="promo-badge">🎉 Promo Spesial Bulan Ini!</span>
+            </div>
+            <h2>Wujudkan Liburan Impianmu ke Banyuwangi</h2>
+            <p>Dapatkan diskon spesial untuk booking minimal H-14. Bebas konsultasi itinerary, bisa request destinasi custom! Dari sunrise Ijen sampai sunset Pulau Merah, semua bisa.</p>
+
+            <div class="action-section">
+              <div class="main-actions">
+                <a href="destinations.html" class="btn btn-explore">
+                  <i class="bi bi-compass"></i>
+                  Lihat Destinasi
+                </a>
+                <a href="https://wa.me/6281234567890" class="btn btn-deals">
+                  <i class="bi bi-whatsapp"></i>
+                  Konsultasi via WA
+                </a>
+              </div>
+
+              <div class="quick-contact">
+                <span class="contact-label">Butuh bantuan memilih paket?</span>
+                <a href="tel:+6281234567890" class="contact-link">
+                  <i class="bi bi-telephone"></i>
+                  Hubungi +62 812-3456-7890
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="visual-element">
+            <img src="assets/img/travel/showcase-3.webp" alt="Wisata Banyuwangi" class="hero-image" loading="lazy">
+            <div class="image-overlay">
+              <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Destinasi</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">2.5K+</span>
+                <span class="stat-label">Wisatawan Puas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="newsletter-section" data-aos="fade-up" data-aos-delay="300">
+          <div class="newsletter-card">
+            <div class="newsletter-content">
+              <div class="newsletter-icon">
+                <i class="bi bi-envelope-heart"></i>
+              </div>
+              <div class="newsletter-text">
+                <h3>Dapatkan Info Promo & Destinasi Terbaru</h3>
+                <p>Subscribe untuk info diskon, destinasi baru, dan tips traveling Banyuwangi langsung ke email kamu</p>
+              </div>
+            </div>
+
+            <form class="php-email-form newsletter-form" action="forms/newsletter.php" method="post">
+              <div class="form-wrapper">
+                <input type="email" name="email" class="email-input" placeholder="Alamat email kamu" required="">
+                <button type="submit" class="subscribe-btn">
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Selamat! Cek email kamu untuk penawaran eksklusif.</div>
+
+              <div class="trust-indicators">
+                <i class="bi bi-lock"></i>
+                <span>Kami jaga privasi Anda. Bisa unsubscribe kapan saja.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="benefits-showcase" data-aos="fade-up" data-aos-delay="400">
+          <div class="benefits-header">
+            <h3>Kenapa Harus Wisata Bareng Kami?</h3>
+            <p>Rasakan bedanya traveling dengan layanan premium dan personal</p>
+          </div>
+
+          <div class="benefits-grid">
+            <div class="benefit-card" data-aos="flip-left" data-aos-delay="450">
+              <div class="benefit-visual">
+                <div class="benefit-icon-wrap">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="benefit-pattern"></div>
+              </div>
+              <div class="benefit-content">
+                <h4>Destinasi Pilihan Terbaik</h4>
+                <p>Setiap lokasi dikurasi langsung oleh tim lokal untuk pengalaman paling autentik</p>
+              </div>
+            </div>
+
+            <div class="benefit-card" data-aos="flip-left" data-aos-delay="500">
+              <div class="benefit-visual">
+                <div class="benefit-icon-wrap">
+                  <i class="bi bi-award"></i>
+                </div>
+                <div class="benefit-pattern"></div>
+              </div>
+              <div class="benefit-content">
+                <h4>Rating Terpercaya</h4>
+                <p>Ratusan ulasan bintang 5 dari wisatawan domestik dan mancanegara</p>
+              </div>
+            </div>
+
+            <div class="benefit-card" data-aos="flip-left" data-aos-delay="550">
+              <div class="benefit-visual">
+                <div class="benefit-icon-wrap">
+                  <i class="bi bi-heart"></i>
+                </div>
+                <div class="benefit-pattern"></div>
+              </div>
+              <div class="benefit-content">
+                <h4>Pelayanan Personal</h4>
+                <p>Itinerary fleksibel disesuaikan dengan keinginan, budget, dan gaya traveling Anda</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Dapatkan Update Wisata Banyuwangi</h4>
+            <p>Berlangganan newsletter untuk info promo, event, dan tips traveling seputar Banyuwangi!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email" placeholder="Email Anda"><input type="submit" value="Subscribe"></div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Permintaan berlangganan Anda telah dikirim. Terima kasih!</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">🌅 Wisata Banyuwangi</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Brawijaya No. 10, Kecamatan Banyuwangi</p>
+            <p>Kabupaten Banyuwangi, Jawa Timur 68416</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62 812-3456-7890</span></p>
+            <p><strong>Email:</strong> <span>info@wisatabanyuwangi.id</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Menu Cepat</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Beranda</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="about.html">Tentang Kami</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="destinations.html">Destinasi</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tours.html">Paket Wisata</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Destinasi Populer</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Kawah Ijen</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Taman Nasional Baluran</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Pantai Pulau Merah</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Teluk Hijau</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Ikuti Kami</h4>
+          <p>Dapatkan inspirasi wisata harian dan promo spesial di media sosial kami</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>2026</span> <strong class="px-1 sitename">Wisata Banyuwangi</strong> <span>— The Sunrise of Java. All Rights Reserved.</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
